@@ -71,7 +71,7 @@ int main() {
 #pragma omp section
 				{
 					tmp_res = 1;
-					for (int i = N - (N / 2 * 1); i < N; i++) {
+					for (int i = (N / 2 * 1); i < N; i++) {
 						tmp = A[i] + B[i];
 						LOG("c tmp[%d] = %d", i, tmp);
 						if (tmp != 0)
@@ -107,7 +107,7 @@ int main() {
 #pragma omp section 
 				{
 					tmp_res = 1;
-					for (int i = N - (N / 4 * 1); i < N / 4 * 2; i++) {
+					for (int i = (N / 4 * 1); i < N / 4 * 2; i++) {
 						tmp = A[i] + B[i];
 						LOG("c tmp[%d] = %d", i, tmp);
 						if (tmp != 0)
@@ -118,7 +118,7 @@ int main() {
 #pragma omp section 
 				{
 					tmp_res = 1;
-					for (int i = N - (N / 4 * 2); i < N / 4 * 3; i++) {
+					for (int i = (N / 4 * 2); i < N / 4 * 3; i++) {
 						tmp = A[i] + B[i];
 						LOG("c tmp[%d] = %d", i, tmp);
 						if (tmp != 0)
@@ -129,7 +129,7 @@ int main() {
 #pragma omp section 
 				{
 					tmp_res = 1;
-					for (int i = N - (N / 4 * 3); i < N; i++) {
+					for (int i = (N / 4 * 3); i < N; i++) {
 						tmp = A[i] + B[i];
 						LOG("c tmp[%d] = %d", i, tmp);
 						if (tmp != 0)
@@ -165,7 +165,7 @@ int main() {
 #pragma omp section
 				{
 					tmp_res = 1;
-					for (int i = N - (N / 8 * 1); i < N / 8 * 2; i++) {
+					for (int i = (N / 8 * 1); i < N / 8 * 2; i++) {
 						tmp = A[i] + B[i];
 						LOG("c tmp[%d] = %d", i, tmp);
 						if (tmp != 0)
@@ -176,7 +176,7 @@ int main() {
 #pragma omp section
 				{
 					tmp_res = 1;
-					for (int i = N - (N / 8 * 2); i < N / 8 * 3; i++) {
+					for (int i = (N / 8 * 2); i < N / 8 * 3; i++) {
 						tmp = A[i] + B[i];
 						LOG("c tmp[%d] = %d", i, tmp);
 						if (tmp != 0)
@@ -187,7 +187,7 @@ int main() {
 #pragma omp section
 				{
 					tmp_res = 1;
-					for (int i = N - (N / 8 * 3); i < (N / 8 * 4); i++) {
+					for (int i = (N / 8 * 3); i < (N / 8 * 4); i++) {
 						tmp = A[i] + B[i];
 						LOG("c tmp[%d] = %d", i, tmp);
 						if (tmp != 0)
@@ -198,7 +198,7 @@ int main() {
 #pragma omp section
 				{
 					tmp_res = 1;
-					for (int i = N - (N / 8 * 4); i < (N / 8 * 5); i++) {
+					for (int i = (N / 8 * 4); i < (N / 8 * 5); i++) {
 						tmp = A[i] + B[i];
 						LOG("c tmp[%d] = %d", i, tmp);
 						if (tmp != 0)
@@ -209,7 +209,7 @@ int main() {
 #pragma omp section
 				{
 					tmp_res = 1;
-					for (int i = N - (N / 8 * 5); i < N / 8 * 6; i++) {
+					for (int i = (N / 8 * 5); i < N / 8 * 6; i++) {
 						tmp = A[i] + B[i];
 						LOG("c tmp[%d] = %d", i, tmp);
 						if (tmp != 0)
@@ -220,7 +220,7 @@ int main() {
 #pragma omp section
 				{
 					tmp_res = 1;
-					for (int i = N - (N / 8 * 6); i < N / 8 * 7; i++) {
+					for (int i = (N / 8 * 6); i < N / 8 * 7; i++) {
 						tmp = A[i] + B[i];
 						LOG("c tmp[%d] = %d", i, tmp);
 						if (tmp != 0)
@@ -231,7 +231,7 @@ int main() {
 #pragma omp section 
 				{
 					tmp_res = 1;
-					for (int i = N - (N / 8 * 7); i < N; i++) {
+					for (int i = (N / 8 * 7); i < N; i++) {
 						tmp = A[i] + B[i];
 						LOG("c tmp[%d] = %d", i, tmp);
 						if (tmp != 0)
